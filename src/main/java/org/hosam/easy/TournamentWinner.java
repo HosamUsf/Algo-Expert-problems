@@ -42,13 +42,6 @@ public class TournamentWinner {
             String winner = results.get(i) == 1 ? home : away;
             map.put(winner, map.getOrDefault(winner, 0) + 3);
         }
-        int max = Integer.MIN_VALUE;
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > max) {
-                max = entry.getValue();
-                tWinner = entry.getKey();
-            }
-        }
         return Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
     }
 
