@@ -2,7 +2,7 @@
 This repository documents my preparation journey of AlgoExpert's 200 coding interview questions, categorized by difficulty level and different approaches for each problem with different space and time complexities.
 
 ## About the Repository
-This repository is intended to help those who are looking to prepare for coding interviews, specifically by practicing with the questions provided by AlgoExpert. The questions are categorized by difficulty level, ranging from easy to hard, and the solutions provided will include different approaches to solving the problem, each with different space and time complexities.
+This repository is intended to help those who are looking to prepare for coding interviews, specifically by practicing with the questions provided by AlgoExpert. The questions are categorized by difficulty level, ranging from easy to hard.
 
 ## Contents
 The repository includes the following:
