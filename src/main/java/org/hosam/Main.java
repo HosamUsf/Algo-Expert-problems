@@ -1,25 +1,37 @@
 package org.hosam;
 
-import org.hosam.easy.TournamentWinner;
+import java.util.Arrays;
 
-import java.util.ArrayList;
-import java.util.List;
+import static org.hosam.easy.ThreeNumberSort.findThreeLargestNumbers;
 
 public class Main {
     public static void main(String[] args) {
-        TournamentWinner tournamentWinner = new TournamentWinner();
 
-        // Sample Input
-        ArrayList<ArrayList<String>> competitions = new ArrayList<>();
-        competitions.add(new ArrayList<>(List.of("HTML", "C#")));
-        competitions.add(new ArrayList<>(List.of("C#", "Python")));
-        competitions.add(new ArrayList<>(List.of("Python", "HTML")));
+        int[] array1 = {141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7};
+        int[] result1 = findThreeLargestNumbers(array1);
+        System.out.println(Arrays.toString(result1));
+        // Expected output: [18, 141, 541]
 
-        ArrayList<Integer> results = new ArrayList<>(List.of(0, 0, 1));
+        int[] array2 = {10, 5, 9, 10, 12};
+        int[] result2 = findThreeLargestNumbers(array2);
+        System.out.println(Arrays.toString(result2));
+        // Expected output: [10, 10, 12]
 
-        // Sample Output
-        String winner = tournamentWinner.tournamentWinner(competitions, results);
-        System.out.println("Tournament Winner: " + winner);
+        int[] array3 = {5, 5, 5, 5, 5, 5};
+        int[] result3 = findThreeLargestNumbers(array3);
+        System.out.println(Arrays.toString(result3));
+        // Expected output: [5, 5, 5] (All numbers are the same)
+
+        int[] array4 = {-10, -5, -8, -1, -15};
+        int[] result4 = findThreeLargestNumbers(array4);
+        System.out.println(Arrays.toString(result4));
+        // Expected output: [-10, -5, -1] (Negative numbers)
+
+        int[] array5 = {1, 2, 3, 4, 5, 6};
+        int[] result5 = findThreeLargestNumbers(array5);
+        System.out.println(Arrays.toString(result5));
+        // Expected output: [4, 5, 6] (Normal sequence)
     }
-
 }
+
+
